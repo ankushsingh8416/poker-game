@@ -1,0 +1,114 @@
+#games {
+  width: 100%;
+  padding: 100px;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.game_heading {
+  text-align: center;
+}
+.game_heading h1 {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    94.32deg,
+    #a96a14,
+    #e6a64d 26.87%,
+    #ffe891 63.85%,
+    #bb842a
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  padding-bottom: 1.3rem;
+  text-align: center;
+}
+.game_heading p {
+  color: #fff;
+}
+.swiper-horizontal {
+  margin-top: 70px !important;
+}
+.game-box {
+  border: 2.5px solid rgba(223, 212, 255, 0.141);
+  border-radius: 2rem;
+  box-shadow: 0 0 2px #3e2d71;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.game-box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.game-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.play_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 9999999999999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.play_btn a {
+  padding: 0.7rem 1.4rem;
+  background: linear-gradient(231.25deg, #150e29 -0.21%, #5f259f 72.26%);
+  color: #fff;
+  border: 1px solid #dadaaa;
+  border-radius: 30px;
+  animation: anim 0.5s 0s alternate forwards infinite linear;
+}
+@keyframes anim {
+  0% {
+    box-shadow: 0 0 10px #fff;
+  }
+
+  100% {
+    box-shadow: 0 0 40px #fff;
+  }
+}
+
+/* =================== Responsive =============== */
+@media (max-width: 920px) {
+  .swiper-horizontal {
+    margin-top: 20px !important;
+  }
+  .play_btn a {
+    padding: 1rem 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .game_heading h1 {
+    font-size: 1.7rem;
+  }
+  #games {
+    padding: 30px;
+  }
+  .play_btn a {
+    font-size: 1.3rem;
+  }
+
+  .play_btn a {
+    padding: 1.4rem 5rem;
+  }
+}
+@media (max-width: 600px) {
+  #games {
+    padding: 10px;
+  }
+}

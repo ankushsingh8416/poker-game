@@ -1,0 +1,174 @@
+#prize {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background: url("https://cdn.spartanpoker.com/media/svg/testimonial_attract.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: center;
+  padding-bottom: 0;
+}
+
+.prize_heading h1 {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    94.32deg,
+    #a96a14,
+    #e6a64d 26.87%,
+    #ffe891 63.85%,
+    #bb842a
+  );
+  padding: 0px 20rem;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  padding-bottom: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+#prize__countdown {
+  width: 80%;
+  height: 100%;
+  margin: 200px auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+.misson_box {
+  margin-bottom: 20px;
+  background: linear-gradient(
+      120deg,
+      #271c46,
+      rgba(123, 100, 193, 0.4) 53%,
+      rgba(54, 39, 98, 0.1) 87%
+    ),
+    #21153b;
+  color: #ffff;
+  padding: 40px;
+}
+.misson_box h1 {
+  padding-bottom: 1rem;
+}
+
+#prize__countdown img {
+  width: 150px;
+  height: 120px;
+  position: absolute;
+}
+#prize__countdown img:nth-child(1) {
+  top: -140px;
+  left: -120px;
+  transform: rotate(-30deg);
+  animation: img 1s 0s alternate forwards infinite linear;
+}
+
+@keyframes img {
+  0% {
+    left: -120px;
+  }
+
+  100% {
+    left: -140px;
+  }
+}
+#prize__countdown img:nth-child(2) {
+  top: -120px;
+  left: 50%;
+  transform: translate(-50%, -50%);  width: 200px;
+  height: 150px;
+}
+#prize__countdown img:nth-child(3) {
+  top: -140px;
+  right: -120px;
+  transform: rotate(30deg);
+  animation: imgs 1s 0s alternate forwards infinite linear;
+}
+
+@keyframes imgs {
+  0% {
+    right: -120px;
+  }
+
+  100% {
+    right: -140px;
+  }
+}
+
+.prize_btn {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+.prize_btn a {
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 45px;
+  background-color: #5f259f;
+}
+
+/* =================== Responsive =============== */
+@media (max-width: 1500px) {
+  .prize_heading h1 {
+    font-size: 1.7rem;
+    padding: 0 1rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 900px) {
+  #prize__countdown img {
+    width: 90px;
+    height: 70px;
+    position: absolute;
+  }
+  #prize__countdown img:nth-child(1) {
+    top: -100px;
+    left: -0;
+    position: absolute !important;
+    transform: rotate(-30deg);
+    animation: img 1s 0s alternate forwards infinite linear;
+  }
+
+  #prize__countdown img:nth-child(3) {
+    top: -100px;
+    right: 0px;
+    position: absolute !important;
+    transform: rotate(30deg);
+    animation: imgs 1s 0s alternate forwards infinite linear;
+  }
+}
+@media (max-width: 730px) {
+  #prize__countdown {
+    width: 100%;
+  }
+  #prize {
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+ 
+  #prize__countdown {
+    width: 100%;
+  }
+  .misson_box {
+    padding: 20px;
+  }
+  .misson_box h1 {
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  .misson_box p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 550px) {
+  .prize_heading h1 {
+    font-size: 1.5rem;
+    padding: 0rem;
+    padding-bottom: 3rem;
+  }
+
+ 
+}
